@@ -1,5 +1,10 @@
 class InstrumentsController < ApplicationController
-  def indes
+  
+  def index
+    @instruments = Instrument.all
+  end
+
+  def show
   end
 
   def create

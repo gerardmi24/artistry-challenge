@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get 'instruments/indes'
+  get 'instruments/index'
   get 'instruments/create'
   get 'instruments/new'
   get 'instruments/edit'
@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   get 'artists/edit'
 get "/artists", to: "artists#index"
 get "/artists/:id", to: "artists#show"
+get "/instruments", to: "instruments#index"
+get "/instruments/:id", to: "instruments#show"
 
 end
