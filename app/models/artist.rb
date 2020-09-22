@@ -1,6 +1,6 @@
 class Artist < ApplicationRecord
 
-    has_many :instruments
+    has_many :artist_instruments
+    has_many :instruments, through: :artist_instruments
 
 end
-
